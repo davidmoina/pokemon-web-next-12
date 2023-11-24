@@ -1,5 +1,5 @@
 const toggleFavorite = (id: number) => {
-  console.log("toggleFavorite llamado");
+  if (typeof window === "undefined") return;
 
   let favorites: number[] = JSON.parse(
     localStorage.getItem("favorites") || "[]"
