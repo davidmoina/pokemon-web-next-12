@@ -3,8 +3,8 @@ import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { pokeApi } from "../../api";
 import { Pokemon } from "../../interfaces";
 import { Button, Card, Container, Grid, Image, Text } from "@nextui-org/react";
-import { localFavorites } from "../../utils";
 import { useState } from "react";
+import { localFavorites } from "../../utils";
 
 interface Props {
   pokemon: Pokemon;
